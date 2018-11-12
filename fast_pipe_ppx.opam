@@ -3,8 +3,8 @@ version: "0.0.1"
 synopsis: "Fast pipe, pipe first as a syntax transform"
 description: """
 Pipe first as a syntax transform.
-Provides a ppx to transform expression containing the |. (Ocaml) or -> (Reason)
-operator. Pipes the left side as first argument of the right side.
+Provides a ppx to transform expressions containing the |. (Ocaml) or -> (Reason)
+operator. Pipes the left side as first argument to the right side.
 
 Example Reason:
 --------------
