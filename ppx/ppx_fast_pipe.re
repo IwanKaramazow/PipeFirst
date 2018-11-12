@@ -33,6 +33,11 @@ let mapper = {
         }
       /* 1->(x => x + 2) */
       | Pexp_fun(_) => {...fn, pexp_desc: Pexp_apply(fn, [(Nolabel, arg)])}
+      /* Action->self.send */
+      | Pexp_field(_) => {
+          ...fn,
+          pexp_desc: Pexp_apply(fn, [(Nolabel, arg)]),
+        }
       | Pexp_tuple(es) =>
         let es =
           List.map(
@@ -53,6 +58,10 @@ let mapper = {
               | Pexp_fun(_) => {
                   ...e,
                   pexp_desc: Pexp_apply(e, [(Nolabel, arg)]),
+                }
+              | Pexp_field(_) => {
+                  ...fn,
+                  pexp_desc: Pexp_apply(fn, [(Nolabel, arg)]),
                 }
               | _ => e
               },

@@ -98,4 +98,10 @@ let fn2 = (~bar=?, x) => {
 
 assert(fn1(~foo=1, ())->(fn2(~bar=2)) === 6);
 
+type field = {send: int => int};
+
+let self = {send: a => a + 1};
+
+assert(1->(self.send) === 2);
+
 let () = print_endline("Fast pipe tests passed!");
