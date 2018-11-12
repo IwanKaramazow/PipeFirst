@@ -1,0 +1,3 @@
+(test
+  (name TestFastPipe)
+  (preprocess (pps fast_pipe_ppx)))

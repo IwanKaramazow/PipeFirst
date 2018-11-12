@@ -1,0 +1,6 @@
+(library
+ (name ppx_fast_pipe)
+ (public_name fast_pipe_ppx)
+ (synopsis "Pipe first syntax transform")
+ (kind ppx_rewriter)
+ (libraries reason ocaml-migrate-parsetree))

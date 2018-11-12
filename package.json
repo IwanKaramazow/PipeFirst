@@ -1,0 +1,18 @@
+{
+  "name": "fast_pipe",
+  "version": "0.0.1",
+  "description": "Fast pipe: pipe first as a syntax transform",
+  "esy": {
+    "build": "refmterr dune build -p fast_pipe_ppx"
+  },
+  "scripts": { "test": "esy dune runtest" },
+  "dependencies": {
+    "@esy-ocaml/reason": "*",
+    "@opam/dune": "*",
+    "@opam/ocaml-migrate-parsetree": "1.1.0",
+    "ocaml": "^4.4.0",
+    "pesy": "*",
+    "refmterr": "*"
+  },
+  "devDependencies": { "@opam/merlin": "*" }
+}
