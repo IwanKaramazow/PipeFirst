@@ -1,4 +1,4 @@
-# Fast pipe ppx
+# Fast pipe ppx [![Build Status](https://travis-ci.org/IwanKaramazow/FastPipe.svg?branch=master)](https://travis-ci.org/IwanKaramazow/FastPipe)
 
 Pipe first as a syntax transform. Transforms expressions containing the `|.` (Ocaml) or `->` (Reason) operator.
 Pipes the left side as first argument of the right side.
