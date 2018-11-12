@@ -26,7 +26,7 @@ person
 |. getAge
 |. validateAge
 
-/* Some(preprocess name) */
+(* Some(preprocess name) *)
 name |. preprocess |. Some;
 
 (*f a ~b ~c *)
