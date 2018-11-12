@@ -6,3 +6,7 @@ before_install:
 install:
   - esy install
   - esy build
+cache:
+  timeout: 360
+  directories:
+    - $HOME/.esy/

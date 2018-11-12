@@ -1,5 +1,5 @@
 {
-  "hash": "efcf3bfb0d4b55593c5dbd02e70d8ac8",
+  "hash": "bdd0eb338e915d5e9706b80035487e24",
   "root": "root@path:./package.json",
   "node": {
     "root@path:./package.json": {
@@ -14,7 +14,7 @@
         "@esy-ocaml/reason@3.3.7", "@opam/dune@opam:1.5.1",
         "@opam/merlin@opam:3.2.2",
         "@opam/ocaml-migrate-parsetree@opam:1.1.0", "ocaml@4.7.1001",
-        "pesy@0.3.14", "refmterr@3.1.9"
+        "refmterr@3.1.9"
       ]
     },
     "refmterr@3.1.9": {
@@ -30,17 +30,6 @@
         "@esy-ocaml/reason@3.3.7", "@opam/jbuilder@opam:transition",
         "@opam/re@opam:1.8.0", "ocaml@4.7.1001"
       ]
-    },
-    "pesy@0.3.14": {
-      "record": {
-        "name": "pesy",
-        "version": "0.3.14",
-        "source":
-          "archive:https://registry.npmjs.org/pesy/-/pesy-0.3.14.tgz#sha1:a531672a93b993387cc1e5fdcb0cad041351ee0f",
-        "files": [],
-        "opam": null
-      },
-      "dependencies": []
     },
     "ocaml@4.7.1001": {
       "record": {
