@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - "8"
+before_install:
+  - npm install -g esy@0.3.4
+  - esy install
+  - esy build
