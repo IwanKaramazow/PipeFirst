@@ -31,7 +31,7 @@ person
 (* Some(preprocess name) *)
 name |. preprocess |. Some;
 
-(*f a ~b ~c *)
+(* f a ~b ~c *)
 a |. f ~b ~c
 """
 maintainer: "Iwan Karamazow <m.falka@icloud.com>"
@@ -43,7 +43,7 @@ dev-repo: "git://github.com/IwanKaramazow/FastPipe.git"
 depends: [ 
   "ocaml" {>= "4.02" & < "4.08"}
   "reason" {>= "3.3.7"}
-  "dune"
+  "dune" {build}
   "ocaml-migrate-parsetree"
 ]
 build: ["dune" "build" "-p" name]

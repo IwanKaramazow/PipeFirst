@@ -1,9 +1,9 @@
 {
-  "name": "fast_pipe",
+  "name": "ppx_fast_pipe",
   "version": "0.0.1",
   "description": "Fast pipe: pipe first as a syntax transform",
   "esy": {
-    "build": "refmterr dune build -p fast_pipe_ppx"
+    "build": "refmterr dune build -p ppx_fast_pipe"
   },
   "scripts": { "test": "esy dune runtest" },
   "dependencies": {
