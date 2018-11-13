@@ -22,9 +22,14 @@ let mapper = {
           pexp_desc: Pexp_apply(fn, [(Nolabel, arg)]),
         }
       /* a->f(b)  === f(a, b) */
-      | Pexp_apply(f, args) => {
-          ...fn,
-          pexp_desc: Pexp_apply(f, [(Nolabel, arg), ...args]),
+      | Pexp_apply(f, args) =>
+        switch (f.pexp_desc) {
+        /* 5->(5->fn) */
+        | Pexp_ident({txt: Lident("|."), loc: _}) => {
+            ...fn,
+            pexp_desc: Pexp_apply(self.expr(self, fn), [(Nolabel, arg)]),
+          }
+        | _ => {...fn, pexp_desc: Pexp_apply(f, [(Nolabel, arg), ...args])}
         }
       /* a->Some === Some(a) */
       | Pexp_construct(ctor, None) => {

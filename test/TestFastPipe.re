@@ -104,4 +104,11 @@ let self = {send: a => a + 1};
 
 assert(1->(self.send) === 2);
 
+let adder = (a, b) => a + b;
+let addFive = 5->adder;
+let ten1 = 5->addFive;
+let ten2 = 5->(5->adder);
+
+assert(10 === ten1 && 10 === ten2);
+
 let () = print_endline("Fast pipe tests passed!");
