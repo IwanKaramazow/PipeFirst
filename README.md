@@ -38,7 +38,7 @@ a |. f ~b ~c
 ```
 (executable
   (name hello_world)
-  (preprocess  (pps fast_pipe_ppx))
+  (preprocess  (pps ppx_fast_pipe))
 ```
 
 Reason: implementation of the `hello_world.re` file
