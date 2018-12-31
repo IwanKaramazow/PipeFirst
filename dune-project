@@ -1,2 +1,2 @@
 (lang dune 1.2)
- (name fast_pipe_ppx)
+ (name pipe_first_ppx)

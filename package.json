@@ -1,11 +1,13 @@
 {
-  "name": "ppx_fast_pipe",
+  "name": "ppx_pipe_first",
   "version": "0.0.1",
-  "description": "Fast pipe: pipe first as a syntax transform",
+  "description": "Pipe First: pipe first as a syntax transform",
   "esy": {
-    "build": "refmterr dune build -p ppx_fast_pipe"
+    "build": "refmterr dune build -p ppx_pipe_first"
   },
-  "scripts": { "test": "esy dune runtest" },
+  "scripts": {
+    "test": "esy dune runtest"
+  },
   "dependencies": {
     "@esy-ocaml/reason": "*",
     "@opam/dune": "*",
@@ -13,5 +15,7 @@
     "ocaml": "^4.4.0",
     "refmterr": "*"
   },
-  "devDependencies": { "@opam/merlin": "*" }
+  "devDependencies": {
+    "@opam/merlin": "*"
+  }
 }

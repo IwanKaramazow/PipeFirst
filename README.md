@@ -1,9 +1,10 @@
-# Fast pipe ppx [![Build Status](https://travis-ci.org/IwanKaramazow/FastPipe.svg?branch=master)](https://travis-ci.org/IwanKaramazow/FastPipe)
+# Pipe First ppx [![Build Status](https://travis-ci.org/IwanKaramazow/PipeFirst.svg?branch=master)](https://travis-ci.org/IwanKaramazow/PipeFirst)
 
 Pipe first as a syntax transform. Transforms expressions containing the `|.` (Ocaml) or `->` (Reason) operator.
 Pipes the left side as first argument of the right side.
 
-*Reason*
+_Reason_
+
 ```reason
 /* validateAge(getAge(parseData(person))) */
 person
@@ -18,7 +19,8 @@ name->preprocess->Some;
 a->f(~b, ~c)
 ```
 
-*Ocaml*
+_Ocaml_
+
 ```ocaml
 (* validateAge (getAge (parseData person)) *)
 person
@@ -34,14 +36,17 @@ a |. f ~b ~c
 ```
 
 ## Usage with Dune
+
 `dune` file
+
 ```
 (executable
   (name hello_world)
-  (preprocess  (pps ppx_fast_pipe))
+  (preprocess  (pps ppx_pipe_first))
 ```
 
 Reason: implementation of the `hello_world.re` file
+
 ```reason
 let () =
   1000
@@ -50,6 +55,7 @@ let () =
 ```
 
 Ocaml: implementation of the `hello_world.ml` file
+
 ```ocaml
 let () =
   1000
