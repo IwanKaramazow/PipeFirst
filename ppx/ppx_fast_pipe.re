@@ -82,6 +82,6 @@ let mapper = {
 
 let () =
   Driver.register(
-    ~name="ppx_fast_pipe", ~args=[], Versions.ocaml_406, (_config, _cookies) =>
+    ~name="ppx_pipe_first", ~args=[], Versions.ocaml_406, (_config, _cookies) =>
     mapper
   );

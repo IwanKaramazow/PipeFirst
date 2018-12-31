@@ -5,6 +5,6 @@ node_modules
 _build
 _release
 _esy
-fast_pipe.install
+pipe_first.install
 .DS_Store
 *.install

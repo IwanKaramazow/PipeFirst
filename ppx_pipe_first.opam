@@ -1,6 +1,6 @@
 opam-version: "2.0"
 version: "0.0.1"
-synopsis: "Fast pipe, pipe first as a syntax transform"
+synopsis: "Pipe First as a syntax transform"
 description: """
 Pipe first as a syntax transform.
 Provides a ppx to transform expressions containing the |. (Ocaml) or -> (Reason)
@@ -37,9 +37,9 @@ a |. f ~b ~c
 maintainer: "Iwan Karamazow <m.falka@icloud.com>"
 authors: "Iwan Karamazow m.falka@icloud.com"
 license: "MIT"
-homepage: "https://github.com/IwanKaramazow/FastPipe"
-bug-reports: "https://github.com/IwanKaramazow/FastPipe"
-dev-repo: "git://github.com/IwanKaramazow/FastPipe.git"
+homepage: "https://github.com/IwanKaramazow/PipeFirst"
+bug-reports: "https://github.com/IwanKaramazow/PipeFirst"
+dev-repo: "git://github.com/IwanKaramazow/PipeFirst.git"
 depends: [ 
   "ocaml" {>= "4.02" & < "4.08"}
   "reason" {>= "3.3.7"}

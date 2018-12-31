@@ -111,4 +111,4 @@ let ten2 = 5->(5->adder);
 
 assert(10 === ten1 && 10 === ten2);
 
-let () = print_endline("Fast pipe tests passed!");
+let () = print_endline("Pipe First tests passed!");
