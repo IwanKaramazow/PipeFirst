@@ -9,10 +9,10 @@
     "test": "esy dune runtest"
   },
   "dependencies": {
-    "@esy-ocaml/reason": "*",
+    "@esy-ocaml/reason": "3.6.0",
     "@opam/dune": "*",
-    "@opam/ocaml-migrate-parsetree": "1.1.0",
-    "ocaml": "^4.4.0",
+    "@opam/ocaml-migrate-parsetree": "1.7.2",
+    "ocaml": "4.9.0",
     "refmterr": "*"
   },
   "devDependencies": {

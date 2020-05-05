@@ -41,8 +41,8 @@ homepage: "https://github.com/IwanKaramazow/PipeFirst"
 bug-reports: "https://github.com/IwanKaramazow/PipeFirst"
 dev-repo: "git://github.com/IwanKaramazow/PipeFirst.git"
 depends: [ 
-  "ocaml" {>= "4.02" & < "4.08"}
-  "reason" {>= "3.3.7"}
+  "ocaml" {>= "4.02" & <= "4.9"}
+  "reason" {>= "3.6.0"}
   "dune" {build}
   "ocaml-migrate-parsetree"
 ]
